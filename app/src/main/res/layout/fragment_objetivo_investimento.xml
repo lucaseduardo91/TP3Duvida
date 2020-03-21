@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ObjetivoInvestimento">
+
+    <RadioGroup
+        android:id="@+id/radioGroupObjInv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.06999999">
+
+        <RadioButton
+            android:id="@+id/radioObjInvA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preservação do capital para não perder valor ao longo do tempo,assumindo baixos riscos de perdas" />
+
+        <RadioButton
+            android:id="@+id/radioObjInvB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aumento gradual do capital ao longo do tempo, assumindo riscos moderados" />
+
+        <RadioButton
+            android:id="@+id/radioObjInvC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aumento do capital acima da taxa de retorno média do mercado, mesmoque isso implique assumir riscos de perdas elevadas" />
+
+        <RadioButton
+            android:id="@+id/radioObjInvD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obter no curto prazo retornos elevados e significativamente acima da taxa de retorno média do mercado, assumindo riscos elevados" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Qual o objetivo desse investimento? "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <Button
+        android:id="@+id/btnNextObjInv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1976D2"
+        android:text="Next"
+        android:textColor="#F5FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupObjInv"
+        app:layout_constraintVertical_bias="0.42000002" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ReservaPorcentagem">
+
+    <RadioGroup
+        android:id="@+id/radioGroupResPct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.100000024">
+
+        <RadioButton
+            android:id="@+id/radioResPctA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No máximo 25% " />
+
+        <RadioButton
+            android:id="@+id/radioResPctB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entre 25,01 e 50%" />
+
+        <RadioButton
+            android:id="@+id/radioResPctC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entre 1 ano e 3 anos" />
+
+        <RadioButton
+            android:id="@+id/radioResPctD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acima de 50%" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:lines="3"
+        android:maxLines="3"
+        android:text="Considerando seus rendimentos regulares, qual a porcentagem você pretende reservar para aplicações financeiras?"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <Button
+        android:id="@+id/btnNextReservaPct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1976D2"
+        android:text="Next"
+        android:textColor="#F5FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupResPct" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

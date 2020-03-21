@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_perguntas"
+    app:startDestination="@id/tempoInvestido">
+
+    <fragment
+        android:id="@+id/aplicacoesQueda"
+        android:name="com.example.tp3perguntas.fragments.AplicacoesQueda"
+        android:label="fragment_aplicacoes_queda"
+        tools:layout="@layout/fragment_aplicacoes_queda" />
+    <fragment
+        android:id="@+id/aplicacoesRendimentos"
+        android:name="com.example.tp3perguntas.fragments.AplicacoesRendimentos"
+        android:label="fragment_aplicacoes_rendimentos"
+        tools:layout="@layout/fragment_aplicacoes_rendimentos" />
+    <fragment
+        android:id="@+id/experienciaFormacao"
+        android:name="com.example.tp3perguntas.fragments.ExperienciaFormacao"
+        android:label="fragment_experiencia_formacao"
+        tools:layout="@layout/fragment_experiencia_formacao" />
+    <fragment
+        android:id="@+id/frequenciaInvest"
+        android:name="com.example.tp3perguntas.fragments.FrequenciaInvest"
+        android:label="fragment_frequencia_invest"
+        tools:layout="@layout/fragment_frequencia_invest" />
+    <fragment
+        android:id="@+id/patrimonioDistribuido"
+        android:name="com.example.tp3perguntas.fragments.PatrimonioDistribuido"
+        android:label="fragment_patrimonio_distribuido"
+        tools:layout="@layout/fragment_patrimonio_distribuido" />
+    <fragment
+        android:id="@+id/rendaMensal"
+        android:name="com.example.tp3perguntas.fragments.RendaMensal"
+        android:label="fragment_renda_mensal"
+        tools:layout="@layout/fragment_renda_mensal" />
+    <fragment
+        android:id="@+id/reservaPorcentagem"
+        android:name="com.example.tp3perguntas.fragments.ReservaPorcentagem"
+        android:label="fragment_reserva_porcentagem"
+        tools:layout="@layout/fragment_reserva_porcentagem" />
+    <fragment
+        android:id="@+id/tempoInvestido"
+        android:name="com.example.tp3perguntas.fragments.TempoInvestido"
+        android:label="fragment_tempo_investido"
+        tools:layout="@layout/fragment_tempo_investido" />
+    <fragment
+        android:id="@+id/valorPatrimonio"
+        android:name="com.example.tp3perguntas.fragments.ValorPatrimonio"
+        android:label="fragment_valor_patrimonio"
+        tools:layout="@layout/fragment_valor_patrimonio" />
+    <fragment
+        android:id="@+id/volumeOperacao"
+        android:name="com.example.tp3perguntas.fragments.VolumeOperacao"
+        android:label="fragment_volume_operacao"
+        tools:layout="@layout/fragment_volume_operacao" />
+    <fragment
+        android:id="@+id/objetivoInvestimento"
+        android:name="com.example.tp3perguntas.fragments.ObjetivoInvestimento"
+        android:label="fragment_objetivo_investimento"
+        tools:layout="@layout/fragment_objetivo_investimento" />
+</navigation>
