@@ -33,13 +33,8 @@
             android:id="@+id/radioResPctC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Entre 1 ano e 3 anos" />
-
-        <RadioButton
-            android:id="@+id/radioResPctD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="Acima de 50%" />
+
     </RadioGroup>
 
     <TextView

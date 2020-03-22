@@ -134,9 +134,8 @@ class ValorPatrimonio : Fragment() {
             else -> soma += 0
         }
         when(perguntasViewModel.quest11){
-            "A" -> soma += 1
-            "B" -> soma += 2
-            "C" -> soma += 3
+            "B" -> soma += 1
+            "C" -> soma += 2
             "D" -> soma += 4
             "E" -> soma += 5
             else -> soma += 0

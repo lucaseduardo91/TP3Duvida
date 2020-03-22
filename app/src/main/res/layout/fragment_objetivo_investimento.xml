@@ -35,7 +35,7 @@
             android:id="@+id/radioObjInvC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Aumento do capital acima da taxa de retorno média do mercado, mesmoque isso implique assumir riscos de perdas elevadas" />
+            android:text="Aumento do capital acima da taxa de retorno média do mercado, mesmo que isso implique assumir riscos de perdas elevadas" />
 
         <RadioButton
             android:id="@+id/radioObjInvD"

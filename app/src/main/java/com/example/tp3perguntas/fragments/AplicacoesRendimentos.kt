@@ -55,7 +55,7 @@ class AplicacoesRendimentos : Fragment() {
                         if(radioAplRendC.isChecked)
                             perguntasViewModel.quest7 = "C"
                         else
-                            if(radioAplRendC.isChecked)
+                            if(radioAplRendD.isChecked)
                                 perguntasViewModel.quest7 = "D"
 
                 findNavController().navigate(R.id.frequenciaInvest)

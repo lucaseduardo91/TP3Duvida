@@ -54,9 +54,7 @@ class ReservaPorcentagem : Fragment() {
                     else
                         if(radioResPctC.isChecked)
                             perguntasViewModel.quest4 = "C"
-                        else
-                            if(radioResPctD.isChecked)
-                                perguntasViewModel.quest4 = "D"
+
                 findNavController().navigate(R.id.aplicacoesQueda)
             }
         }

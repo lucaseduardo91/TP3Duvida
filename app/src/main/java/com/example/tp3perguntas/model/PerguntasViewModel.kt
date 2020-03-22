@@ -1,11 +1,9 @@
 package com.example.tp3perguntas.model
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class PerguntasViewModel: ViewModel(){
-    var pontos = MutableLiveData<Int>().apply { value = 0 }
-    var soma = 0
+
     var quest1 : String? = null
     var quest2 : String? = null
     var quest3 : String? = null

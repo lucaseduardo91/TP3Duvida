@@ -25,7 +25,5 @@ class Perfil : AppCompatActivity() {
             else
                 resultadoSoma.text = "Arrojado"
 
-        valorSoma.text = soma.toString()
-
     }
 }

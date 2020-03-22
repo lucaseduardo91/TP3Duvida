@@ -55,7 +55,7 @@ class PatrimonioDistribuido : Fragment() {
                         if(radioPatDistC.isChecked)
                             perguntasViewModel.quest6 = "C"
                         else
-                            if(radioPatDistC.isChecked)
+                            if(radioPatDistD.isChecked)
                                 perguntasViewModel.quest6 = "D"
 
                 findNavController().navigate(R.id.aplicacoesRendimentos)
