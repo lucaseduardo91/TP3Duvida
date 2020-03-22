@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 
@@ -31,15 +32,16 @@ class ReservaPorcentagem : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var button = getView()!!.findViewById<Button>(R.id.btnNextReservaPct)
         activity?.let { act ->
             perguntasViewModel = ViewModelProviders.of(act)
                 .get(PerguntasViewModel::class.java)
         }
-        setUpListeners()
+        setUpListeners(button)
     }
 
-    private fun setUpListeners(){
-        btnNextTempInvest.setOnClickListener{
+    private fun setUpListeners(btn:Button?){
+        btn?.setOnClickListener{
             var radioOpcao = radioGroupResPct.checkedRadioButtonId
 
             if(radioOpcao != -1)

@@ -7,7 +7,7 @@
     tools:context=".fragments.RendaMensal">
 
     <RadioGroup
-        android:id="@+id/radioGroup6"
+        android:id="@+id/radioGroupRendaMensal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,25 +18,25 @@
         app:layout_constraintVertical_bias="0.060000002">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioRendaMensalA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Até R$ 1.000" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioRendaMensalB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="De R$ 1.001 até R$ 5.000 " />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioRendaMensalC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="De R$ 5.001 até R$ 10.000 " />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioRendaMensalD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Acima de R$ 10.000" />
@@ -68,7 +68,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup6"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupRendaMensal"
         app:layout_constraintVertical_bias="0.41000003" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

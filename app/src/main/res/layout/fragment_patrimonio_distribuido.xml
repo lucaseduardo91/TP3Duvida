@@ -7,7 +7,7 @@
     tools:context=".fragments.PatrimonioDistribuido">
 
     <RadioGroup
-        android:id="@+id/radioGroup5"
+        android:id="@+id/radioGroupPatDist"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -20,25 +20,25 @@
         app:layout_constraintVertical_bias="0.100000024">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioPatDistA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Meu patrimônio não está aplicado ou está todo aplicado em renda fixa e/ou imóveis" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioPatDistB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Menos de 25% em renda variável e o restante em renda fixa e/ou imóveis " />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioPatDistC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Entre 25,01 e 50% aplicado em renda variável e o restante em renda fixa e/ou imóveis" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioPatDistD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Acima de 50% em renda variável " />
@@ -70,7 +70,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup5"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupPatDist"
         app:layout_constraintVertical_bias="0.39" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

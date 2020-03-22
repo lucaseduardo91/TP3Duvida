@@ -7,7 +7,7 @@
     tools:context=".fragments.FrequenciaInvest">
 
     <RadioGroup
-        android:id="@+id/radioGroup9"
+        android:id="@+id/radioGroupFreqInv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,19 +18,19 @@
         app:layout_constraintVertical_bias="0.060000002">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioFreqInvA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Entre 0 e 1 ponto" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioFreqInvB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Entre 2 e 4 pontos" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioFreqInvC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Acima de 5 pontos" />
@@ -89,7 +89,9 @@
         android:textColor="#F5FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup9" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.273" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

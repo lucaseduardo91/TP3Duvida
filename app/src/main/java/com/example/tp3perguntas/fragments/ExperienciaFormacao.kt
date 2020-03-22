@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.fragment.findNavController
 
@@ -31,35 +32,35 @@ class ExperienciaFormacao : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        var button = getView()!!.findViewById<Button>(R.id.btnNextXp)
+
         activity?.let { act ->
             perguntasViewModel = ViewModelProviders.of(act)
                 .get(PerguntasViewModel::class.java)
         }
+        setUpListeners(button)
 
-        btnNextTempInvest.setOnClickListener{
-            setUpListeners()
-        }
     }
 
-    private fun setUpListeners(){
+    private fun setUpListeners(btn:Button?){
 
+        btn?.setOnClickListener {
             var radioOpcao = radioGroupXPFor.checkedRadioButtonId
 
-            if(radioOpcao != -1)
-            {
-                if(radioXpForA.isChecked)
+            if (radioOpcao != -1) {
+                if (radioXpForA.isChecked)
                     perguntasViewModel.quest3 = "A"
                 else
-                    if(radioXpForB.isChecked)
+                    if (radioXpForB.isChecked)
                         perguntasViewModel.quest3 = "B"
                     else
-                        if(radioXpForC.isChecked)
+                        if (radioXpForC.isChecked)
                             perguntasViewModel.quest3 = "C"
                         else
-                            if(radioXpForD.isChecked)
+                            if (radioXpForD.isChecked)
                                 perguntasViewModel.quest3 = "D"
                 findNavController().navigate(R.id.reservaPorcentagem)
             }
-
+        }
     }
 }

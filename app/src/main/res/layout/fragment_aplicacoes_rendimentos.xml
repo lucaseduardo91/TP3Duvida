@@ -7,7 +7,7 @@
     tools:context=".fragments.AplicacoesRendimentos">
 
     <RadioGroup
-        android:id="@+id/radioGroup2"
+        android:id="@+id/radioGroupAplRend"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -20,25 +20,25 @@
         app:layout_constraintVertical_bias="0.100000024">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioAplRendA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Conto com o rendimento dessas aplicações para complementar minha renda mensal " />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioAplRendB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Eventualmente posso resgatar parte das aplicações para fazer frente aos meus gastos. Contudo, não tenho intenção de resgatar no curto prazo e pretendo fazer aplicações regulares" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radioAplRendC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=" Não tenho intenção de resgatar no curto prazo, mas não pretendo realizar novas aplicações" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/radioAplRendD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Não tenho intenção de resgatar no curto prazo e ainda pretendo fazer aplicações regulares" />
@@ -70,7 +70,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupAplRend"
         app:layout_constraintVertical_bias="0.39" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
